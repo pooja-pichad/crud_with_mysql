@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "34e29b32-8af2-4916-acab-092aa5629c2a",
+		"name": "project 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post_data_of project2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{        \"id\": \"309\",\n        \"name\": \"Understanding programming through recursion\",\n        \"logo\": \"http://bit.do/recursion-png\",\n        \"notes\": null,\n        \"days_to_complete\": \"45\",\n        \"short_description\": \"Iss course ko hum use kar kar recursions aur programming ki depth mei jayenge.\",\n        \"type\": \"html\",\n        \"course_type\": null,\n        \"lang_available\": [\n            \"en\"\n        ]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/postmethod",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"postmethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/get_by_id/53",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get_by_id",
+						"53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_data of project 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/get_data",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_data_project2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"400\",\n        \"name\": \"Understanding programming through recursion\",\n        \"logo\": \"http://bit.do/recursion-png\",\n        \"notes\": null,\n        \"days_to_complete\": \"45\",\n        \"short_description\": \"Iss course ko hum use kar kar recursions aur programming ki depth mei jayenge.\",\n        \"type\": \"html\",\n        \"course_type\": null,\n        \"lang_available\": \"en\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/putmethod",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"putmethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_method",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/deletemethod/53",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deletemethod",
+						"53"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
